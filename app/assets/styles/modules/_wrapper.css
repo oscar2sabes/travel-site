@@ -16,4 +16,8 @@
 		padding-right: 0;
 	}
 
+	&--b-margin {
+		margin-bottom:3.875rem;
+	}
+
 }
