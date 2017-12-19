@@ -483,6 +483,7 @@ img {
 		left: 0;
 		width: 100%;
 		text-align: center;
+		padding-top: 60px;
   	}
 
 .large-hero__title {
@@ -1075,4 +1076,60 @@ img {
 			margin-right: 2.1rem
 	}
   }
+
+.site-header{
+	padding: 20px 0;
+	width: 100%;
+	position: absolute;
+	z-index: 2;
+	background-color: rgba(#2f5572, .2);
+
+
+    
+}
+
+.site-header__btn-container {
+
+		float: right;
+	}
+
+.site-header__logo {
+	    position: absolute;
+	    background-color: #2f5572;
+	    padding: 25px 36px;
+	    top: 0;
+	}
+
+.site-header--logo-text {
+		text-indent: -9999px;
+	}
+
+.primary-nav--pull-right {
+		float: right;
+		padding: 12px 0;
+	}
+
+.primary-nav ul {
+		margin: 0;
+		padding: 0;
+	}
+
+.primary-nav ul::after {
+		content:"";
+		clear: both;
+		display: table;
+	}
+
+.primary-nav li {
+		list-style: none;
+		float: left;
+		padding-right: 20px;
+	}
+
+.primary-nav a {
+		color: #FFF;
+		text-decoration: none;
+		font-weight: 300;
+		padding: 30px 0;
+	}
 

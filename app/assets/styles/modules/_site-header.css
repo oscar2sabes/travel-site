@@ -1,0 +1,28 @@
+
+.site-header{
+	padding: 20px 0;
+	width: 100%;
+	position: absolute;
+	z-index: 2;
+	background-color: rgba($mainBlue, .2);
+
+
+	&__btn-container {
+
+		float: right;
+	}
+
+	&__logo {
+	    position: absolute;
+	    background-color: $mainBlue;
+	    padding: 25px 36px;
+	    top: 0;
+	}
+
+	&--logo-text {
+		text-indent: -9999px;
+	}
+
+
+    
+}
