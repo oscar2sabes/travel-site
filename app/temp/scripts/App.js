@@ -103,19 +103,23 @@ var MobileMenu = function () {
 	function MobileMenu() {
 		_classCallCheck(this, MobileMenu);
 
+		this.siteHeader = (0, _jquery2.default)('.site-header');
 		this.menuIcon = (0, _jquery2.default)('.site-header__menu-icon');
+		this.menuContent = (0, _jquery2.default)('.site-header__menu-content');
 		this.events();
 	}
 
 	_createClass(MobileMenu, [{
 		key: 'events',
 		value: function events() {
-			this.menuIcon.click(this.toggleTheMenu);
+			this.menuIcon.click(this.toggleTheMenu.bind(this));
 		}
 	}, {
 		key: 'toggleTheMenu',
 		value: function toggleTheMenu() {
-			console.log("hooray - the icon was clicked");
+			this.menuContent.toggleClass('site-header__menu-content--is-visible');
+			this.siteHeader.toggleClass('site-header--is-expanded');
+			this.menuIcon.toggleClass('site-header__menu-icon--close-x');
 		}
 	}]);
 
@@ -10341,9 +10345,9 @@ jQuery.nodeName = nodeName;
 // https://github.com/jrburke/requirejs/wiki/Updating-existing-libraries#wiki-anon
 
 if ( true ) {
-	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = function() {
+	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = (function() {
 		return jQuery;
-	}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
+	}).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 }
 
