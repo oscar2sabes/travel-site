@@ -10,7 +10,9 @@
 		background-color: rgba($mainBlue , .55);
 	}
 
+/*  menu bar larger screens */
 	@mixin atMedium {
+		
 		background-color: rgba($mainBlue, .3); 
 	}
 

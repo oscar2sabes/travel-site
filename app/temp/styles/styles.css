@@ -1097,9 +1097,12 @@ img {
 		background-color: rgba(47,85,114, .55);
 	}
 
+/*  menu bar larger screens */
+
 @media (min-width: 800px){
 
 .site-header {
+		
 		background-color: rgba(47,85,114, .3)
 }
   }
